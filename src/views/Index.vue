@@ -2,13 +2,12 @@
   <div class="index">
     <ul>
       <li v-for="capstone in capstones" v-bind:key="capstone.id" class="capstone-index">
-        <router-link to="/show/1">
+        <router-link :to="`/show/${capstone.id}`">
           <img :src="capstone.screenshot" alt="" />
         </router-link>
         <p>Name: {{ capstone.student.first_name }} {{ capstone.student.last_name }}</p>
         <p>Capstone Title: {{ capstone.name }}</p>
         <p>Description: {{ capstone.description }}</p>
-        <router-link class="btn btn-info" :to="`/show/${capstone.id}`">Capstone Details</router-link>
       </li>
     </ul>
   </div>
