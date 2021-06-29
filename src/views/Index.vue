@@ -1,5 +1,6 @@
 <template>
-  <div class="index">
+  <div id="app">
+    <!-- <div class="index">
     <ul>
       <li v-for="capstone in capstones" v-bind:key="capstone.id" class="capstone-index">
         <router-link :to="`/show/${capstone.id}`">
@@ -10,6 +11,44 @@
         <p>Description: {{ capstone.description }}</p>
       </li>
     </ul>
+  </div> -->
+
+    <!-- Main -->
+    <div id="main">
+      <div class="inner">
+        <header>
+          <h1>
+            This is Phantom, a free, fully responsive site
+            <br />
+            template designed by
+            <a href="http://html5up.net">HTML5 UP</a>
+            .
+          </h1>
+          <p>
+            Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu
+            elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum
+            dolor sit amet nullam dolore.
+          </p>
+        </header>
+        <section class="tiles">
+          <span v-for="capstone in capstones" v-bind:key="capstone.id" class="capstone-index">
+            <article class="style1">
+              <span class="image">
+                <router-link :to="`/show/${capstone.id}`">
+                  <img :src="capstone.screenshot" alt="" />
+                </router-link>
+              </span>
+              <a href="generic.html">
+                <h2>{{ capstone.name }}</h2>
+                <div class="content">
+                  <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                </div>
+              </a>
+            </article>
+          </span>
+        </section>
+      </div>
+    </div>
   </div>
 </template>
 
