@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="wrapper">
     <!-- <div class="index">
     <ul>
       <li v-for="capstone in capstones" v-bind:key="capstone.id" class="capstone-index">
@@ -17,11 +17,14 @@
     <div id="main">
       <div class="inner">
         <header>
-          <h1>Placeholder</h1>
-          <p>Placeholder</p>
+          <h1>Welcome to the Student Capstone Catalog!</h1>
+          <p>
+            Here you can see all of the capstones that the students of Actualize have created. Click on a tile to learn
+            more about each individual project.
+          </p>
         </header>
         <section class="tiles">
-          <article class="style1" v-for="capstone in capstones" v-bind:key="capstone.id">
+          <article class="style6" v-for="capstone in capstones" v-bind:key="capstone.id">
             <span class="image">
               <img :src="capstone.screenshot" alt="" />
             </span>
