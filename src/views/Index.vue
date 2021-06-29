@@ -8,13 +8,13 @@
         <p>Name: {{ capstone.student.first_name }} {{ capstone.student.last_name }}</p>
         <p>Capstone Title: {{ capstone.name }}</p>
         <p>Description: {{ capstone.description }}</p>
+        <router-link class="btn btn-info" :to="`/show/${capstone.id}`">Capstone Details</router-link>
       </li>
     </ul>
   </div>
 </template>
 
 <script>
-// import students from "./dummy-data.js";
 // import axios from "axios";
 export default {
   data: function () {
