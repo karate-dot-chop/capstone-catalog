@@ -1,9 +1,22 @@
 <template>
-  <div class="capstone-show">
+  <div id="wrapper">
+    <!-- <div class="capstone-show">
     <img :src="capstone.screenshot" alt="" />
     <h2>Capstone Name: {{ capstone.name }}</h2>
     <p>Created By: {{ capstone.student.first_name + " " + capstone.student.last_name }}</p>
     <p>Description: {{ capstone.description }}</p>
+  </div> -->
+
+    <!-- Main -->
+    <div id="main">
+      <div class="inner">
+        <h1 text-align="center">{{ capstone.name }}</h1>
+        <span class="image main"><img :src="capstone.screenshot" alt="" /></span>
+        <p>
+          {{ capstone.description }}
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 
