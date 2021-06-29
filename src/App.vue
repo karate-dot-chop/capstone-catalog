@@ -5,7 +5,7 @@
       <nav>
         <ul>
           <li>
-            <router-link to="/index">Index</router-link>
+            <router-link to="/capstones">Index</router-link>
           </li>
         </ul>
       </nav>

@@ -28,7 +28,7 @@
             <span class="image">
               <img :src="capstone.screenshot" alt="" />
             </span>
-            <a :href="`/show/${capstone.id}`">
+            <a :href="`/capstones/${capstone.id}`">
               <h2>{{ capstone.name }}</h2>
               <p>{{ capstone.student.first_name + " " + capstone.student.last_name }}</p>
             </a>
