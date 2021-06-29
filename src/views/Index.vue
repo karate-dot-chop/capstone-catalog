@@ -17,35 +17,19 @@
     <div id="main">
       <div class="inner">
         <header>
-          <h1>
-            This is Phantom, a free, fully responsive site
-            <br />
-            template designed by
-            <a href="http://html5up.net">HTML5 UP</a>
-            .
-          </h1>
-          <p>
-            Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu
-            elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum
-            dolor sit amet nullam dolore.
-          </p>
+          <h1>Placeholder</h1>
+          <p>Placeholder</p>
         </header>
         <section class="tiles">
-          <span v-for="capstone in capstones" v-bind:key="capstone.id" class="capstone-index">
-            <article class="style1">
-              <span class="image">
-                <router-link :to="`/show/${capstone.id}`">
-                  <img :src="capstone.screenshot" alt="" />
-                </router-link>
-              </span>
-              <a href="generic.html">
-                <h2>{{ capstone.name }}</h2>
-                <div class="content">
-                  <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-                </div>
-              </a>
-            </article>
-          </span>
+          <article class="style1" v-for="capstone in capstones" v-bind:key="capstone.id">
+            <span class="image">
+              <img :src="capstone.screenshot" alt="" />
+            </span>
+            <a :href="`/show/${capstone.id}`">
+              <h2>{{ capstone.name }}</h2>
+              <p>{{ capstone.student.first_name + " " + capstone.student.last_name }}</p>
+            </a>
+          </article>
         </section>
       </div>
     </div>
