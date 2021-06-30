@@ -6,7 +6,7 @@ import CapstonesShow from "../views/Show.vue";
 Vue.use(VueRouter);
 
 const routes = [
-  { path: "/capstones", name: "Index", component: CapstonesIndex },
+  { path: "/", name: "Index", component: CapstonesIndex },
   { path: "/capstones/:id", name: "Show", component: CapstonesShow },
 ];
 
