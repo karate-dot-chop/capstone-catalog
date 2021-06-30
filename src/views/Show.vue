@@ -11,6 +11,9 @@
     <div id="main">
       <div class="inner">
         <h1 text-align="center">{{ capstone.name }}</h1>
+        <i>Created by: {{ capstone.student.first_name }} {{ capstone.student.last_name }}</i>
+        <br />
+        <br />
         <span class="image main"><img :src="capstone.screenshot" alt="" /></span>
         <p>
           {{ capstone.description }}
